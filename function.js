@@ -142,11 +142,104 @@ let multiply1 =(a,b) => {
     return a * b;
 };
 
-// identify parameter and argument
+//Q3. identify parameter and argument
 function welcome(name){
     console.log(name);
 }
-welcome("priyanka")
+welcome("priyanka");
+// ans3. name in function declaration is parameter and priyanka is argument
+
+
+//  use rest parameter to accept any number of scores and return tne total
+function getScore(...scores){
+    let total = 0 ;
+    scores.forEach(function(val){
+        total = total + val;
+    });
+    return total;
+}
+console.log(getScore( 10, 20, 30, 40 ,50));
+  
+
+
+function outer(){
+    let count = 0 ;
+    return function(){
+        count++;
+        console.log(count);
+    }
+}
+const counter=outer(); 
+counter();
+counter();
+
+
+// practice section
+// write a BMI calculator
+function bmi (weight,height) {
+    return weight/(height*height);
+}
+// console.log(Math.round(bmi(56,5.2)))
+console.log(bmi(56,5.2).toFixed(2));
+
+// create a reusable discount calculator (HOF)
+function discountCalculator(discount){
+    return function(price){
+return price -price*(discount/100);
+    };
+}
+let discounter = discountCalculator(25);
+console.log(discounter(250));
+let ten = discountCalculator(10);
+let twenty = discountCalculator(20);
+console.log(ten(200))
+
+
+// build a counter using clouser
+function counter1(){
+    let count =0 ;
+    return function(){
+        count++;
+        return count;
+    };
+}
+// console.log(counter1()());
+let c = counter1();
+console.log(c());
+
+
+// create a pure function to transform a value
+function double(val){
+    return val * 2;
+}
+console.log(double(6));
+
+
+// IIFE
+(function (){
+    const password = "secretpassward";
+    console.log(password);
+})();
+// ham ise bahar access nahi kar sakte
+console.log(password);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
