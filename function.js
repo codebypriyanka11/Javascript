@@ -113,6 +113,7 @@ console.log("asdf")
 // hoisting differences between declaration and expresssion
 
 // function declaration me hosting work karti hai
+// ya proper hoisting
 sixth()
 
 function sixth(){
@@ -120,6 +121,7 @@ function sixth(){
 }
 
 // not in finction expression -> error ayega 
+// temperal dead zone bhi ha ya
 // seventh();
 
 
@@ -221,7 +223,7 @@ console.log(double(6));
     console.log(password);
 })();
 // ham ise bahar access nahi kar sakte
-console.log(password);
+// console.log(password);
 
 
 
