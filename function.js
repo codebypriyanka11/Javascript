@@ -225,10 +225,12 @@ console.log(double(6));
 // ham ise bahar access nahi kar sakte
 // console.log(password);
 
-
-
-
-
+// FOR EACH
+let arr = [12, 23 ,34, 45, 56];
+arr.forEach(function(val){
+    console.log(`hello I am ${val}`);
+})
+console.log(val);
 
 
 
