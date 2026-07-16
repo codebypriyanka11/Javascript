@@ -176,5 +176,13 @@ console.log(cll);
 let countries = ["USA","UK"];
 countries = ["INDIA", ...countries];
 
+// clone this Array
+let wer = [1,2,3,4];
+let wer1 = [...wer];
 
+
+// confussion part 
+// splice and slice
+// .map and foreach 
+// big blunder with .sort
 
