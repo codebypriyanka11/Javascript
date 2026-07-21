@@ -1,7 +1,7 @@
 // var a =12;
 // window mein add hota hai 
 // function scoped hota hai 
-// aap firse declare jr skte ho same se and errror nahi aaayega
+// aap firse declare kr skte ho same se and errror nahi aaayega
 // var a=123;
 
 let a = 1;
@@ -73,7 +73,7 @@ if (count-- === 5) {
     console.log("Not Matched")
 }
 
-// eary return return
+// easy return return
 function getval(val) {
     if (val < 25) return "D";
     else if (val < 50) return "C";
@@ -121,7 +121,7 @@ console.log(getscore(332))
 
 
 function rps(user, computer) {
-    if (user ===computer) return "draw";
+    if (user === computer) return "draw";
     if (user === "rock" && computer === "scissor") return "user win";
     if (user === "scissor" && computer === "rock") return "computer win";
     if (user === "paper" && computer === "rock") return "user win";
@@ -130,7 +130,7 @@ function rps(user, computer) {
     if (user === "paper" && computer === "scissor") return "computer win";
 }
 rps("rock", "scissor")
-console.log(rps("scissor", "scissor") )
+console.log(rps("scissor", "scissor"))
 
 
 
@@ -139,8 +139,8 @@ function rps(user1, computer1) {
     if (user1 === "rock" && computer1 === "scissor") return "user win";
     if (user1 === "paper" && computer1 === "rock") return "user win";
     if (user1 === "scissor" && computer1 === "paper") return "user win";
-return "computer win";
+    return "computer win";
 }
 rps("rock", "scissor")
-console.log(rps("scissor", "scissor") )
+console.log(rps("scissor", "scissor"))
 

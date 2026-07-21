@@ -113,7 +113,7 @@ for(let i=1 ; i<=100 ; i++){
 //     . skips number divisible by 3 
 //     . print all others 
 
-//     use cindition 
+//     use condition 
 for(let i=1; i<=20 ;i++){
     if(i%3 ===0) continue;
         
@@ -123,7 +123,7 @@ for(let i=1; i<=20 ;i++){
 
 
 // print first 5 odd numbers only 
-// write a llop frm 1 to 100 that 
+// write a loop from 1 to 100 that 
 //     . print only 5 odd numbers 
 //     . then stops the loop 
 //     use both if continue and a counter + break 

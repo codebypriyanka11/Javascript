@@ -3,12 +3,12 @@
 console.log(marks[1]);
 
 
-// modify the array
+// modify the array --> in original array (OG)
 marks[3]=87;
 console.log(marks);
 
 
-// push and pop
+// push and pop --> OG
 marks.push(90);
 marks.push(80);
 marks.push(50);
@@ -17,19 +17,19 @@ marks.pop();
 console.log(marks);
 
 
-// shift -> starting se value remove karta hai
+// shift -> starting se value remove karta hai -->OG
 marks.shift();
-// unshift -> starting me kuch add karta hai
+// unshift -> starting me kuch add karta hai --> OG
 marks.unshift(23);
 console.log(marks);
 
 
-// splice -> bichhe se value remove karta hai
+// splice -> bichhe se value remove karta hai -- OG
 //  (kha se remove karna hai (index Node. do) , kitna remove karna hai)
 marks.splice(1,2);
 console.log(marks);
 
-// slice new written copy data hai 
+// slice new written copy data hai --> NEW ARRAY CREATE
 // (kha se hatana hai ,kha tak hatana hai)
 let arr = [12,4,34,9,56];
 let newarr = arr.slice(1,3);
@@ -37,13 +37,18 @@ console.log(`before slice  ${arr}`);
 console.log(newarr);
 
 
-// reverse --> main array get change
+// reverse --> main array get change-->OG
 arr.reverse();
 console.log(arr);
 
-// sort --> ya normaly ascending order me hota hai 
+// sort --> ya normaly ascending order me hota hai -->OG
+// yaha ya sort isliya nahi ho raha kyo ki ya numbers hai
 arr.sort();
-// or is se bi ascending order me hota hai 
+console.log(arr);
+let abc = ["l","s","r","y","a","q","t","b"];
+abc.sort();
+console.log(abc);
+// or is se bi ascending order me hota hai --> specialy for numbers
 let asr = arr.sort(function (a,b){
     return a-b;
 })

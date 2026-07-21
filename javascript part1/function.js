@@ -30,11 +30,11 @@ function add(v1=0,v2=0){
 }
 add(1,2);
 
-// jab argument kai saare value ho to humein utna hi para 
-// meter lana padta hai isse bachna ke liya hu rest ka use
+// jab argument kai saare value ho to humein utna hi parameter
+//  lana padta hai isse bachna ke liya hu rest ka use
 //  karte hai ... agar ... function ke parameter space mein
 //  lage to wo rest operator hai and agar wo arrays and objects
-//  mein lade to wo spread operator hai
+//  mein lage to wo spread operator hai
 function abcd(...val ){
     console.log(val)
 }
@@ -55,8 +55,8 @@ abce(function(){
     console.log("hey");
 })
 
-// high order function   aise fun jo ki return kare ak function ya fir 
-// accept kara ak function apna ak parameter me
+// high order function -->  aise fun jo ki return kare ak function ya fir 
+// accept kara ak function apne ak parameter me
 function asdf(){
     return function(){
         console.log("hello");
@@ -113,14 +113,14 @@ console.log("asdf")
 // hoisting differences between declaration and expresssion
 
 // function declaration me hosting work karti hai
-// ya proper hoisting
+// yaa=c proper hoisting
 sixth()
 
 function sixth(){
     console.log("sixth");
 }
 
-// not in finction expression -> error ayega 
+// not in fnction expression -> error ayega 
 // temperal dead zone bhi ha ya
 // seventh();
 
