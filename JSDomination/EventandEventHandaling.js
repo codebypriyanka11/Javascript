@@ -34,16 +34,42 @@ console.log(evt.data);
   });
 
 
+//   TASK 1
+//   HAM CHAHATA HAI KI AGAR HAM KOI SA BI KEYWORD DABAYE TO VO SCREEN PAR SHOW HO
+let h2 = document.querySelector("h2")
+ window.addEventListener("keydown",function(dets){
+    console.log(dets.key);
+    if(dets.key === " "){
+        h2.textContent = "SPC";
+    }else{
+h2.textContent = dets.key;
+    }
+    
+ })
+// TASK 1 END HERE
 
-
-
-
-
-
-
-
-
-
+// TASK 2
+let btn = document.querySelector("#btn");
+let fileinp = document.querySelector("#fileinp");
+btn.addEventListener("click",function(){
+    fileinp.click();
+})
+// fileinp.addEventListener("change",function(dets){
+//     // console.log(dets);
+//     btn.textContent = dets.target.files[0].name;  
+// })
+// more perfect way
+fileinp.addEventListener("change",function(dets){
+    const file = dets.target.files[0];
+    if (file){
+        btn.textContent = file.name;
+    }
+})
+// TASK 2 END HERE
+let form = document.querySelector("form");
+form.addEventListener("submit",function(dets){
+    dets.preventDefault();
+})
 
 
 
