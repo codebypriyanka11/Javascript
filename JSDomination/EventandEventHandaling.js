@@ -36,16 +36,16 @@ select.addEventListener("change", function (dets) {
 
 //   TASK 1
 //   HAM CHAHATA HAI KI AGAR HAM KOI SA BI KEYWORD DABAYE TO VO SCREEN PAR SHOW HO
-// let h2 = document.querySelector("h2")
-//  window.addEventListener("keydown",function(dets){
-//     console.log(dets.key);
-//     if(dets.key === " "){
-//         h2.textContent = "SPC";
-//     }else{
-// h2.textContent = dets.key;
-//     }
+let h2 = document.querySelector("h2")
+ window.addEventListener("keydown",function(dets){
+    console.log(dets.key);
+    if(dets.key === " "){
+        h2.textContent = "SPC";
+    }else{
+h2.textContent = dets.key;
+    }
 
-//  })
+ })
 // TASK 1 END HERE
 
 // TASK 2
