@@ -114,6 +114,25 @@
             object-fit: cover;
             
         }
+        /* TASK 3 END HERE */
+
+        /* TASK 4 */
+        #abcd{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        
+        }
+
+        /* this also use in event bubbling */
+        body{
+             position: relative;
+            overflow: hidden;
+        }
+        /* task 4 end here */
+
     </style>
 </head>
 
@@ -139,7 +158,9 @@
         <h2>A</h2>
     </div>
     <!-- TASK 1 END-->
+
     <br>
+
     <!-- TASK 2 -->
     <div id="main1">
         <!-- this is already get display none -->
@@ -147,7 +168,9 @@
         <div id="btn">Upload File</div>
     </div>
     <!-- TASK 2 END -->
+
     <br>
+
     <!-- TASK 3 -->
     <div id="main2">
         <form action="">
@@ -170,11 +193,27 @@
 
 
         </div> -->
+       
     </div>
+     <!-- TASK 3 END HERE -->
+        
+         <br>
 
+        
+        <!-- task 4  -->
+            <div id="abcd"></div>
+        <!-- task 4 end here -->
+<br>
 
+<!-- keyup  ,  event object -- target,type,preventDefault -->
 
-
+<!-- event bubbling and capyuring -->
+<div id="main3">
+    <div id="niv">
+        <a href="">Home</a><a href="">About</a>
+        <button>click and submit</button>
+    </div>
+</div>
 
 
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+         body{
+             /* position: relative;
+            overflow: hidden; */
+            padding: 30px;
+        }
+      
+
+        #main3{
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            /* padding: 30px; */
+        }
+        #nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            background-color: #444;
+            padding: 30px;
+        } 
+        #a{
+            color:white ;
+        }
+
+       #btn2{
+            padding: 12px 22px;
+            background-color: red;
+            border-radius:5px ;
+            border: none;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .lt{
+            text-decoration: line-through;
+        }
+
+        .a{
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+        }
+        .b{
+            height: 160px;
+            width: 160px;
+            background-color: rgb(34, 198, 146);
+        }
+.c{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(185, 211, 34);
+        }
+    </style>
+</head>
+<body>
+    <!-- keyup  ,  event object -- target,type,preventDefault -->
+
+<!-- event bubbling and capturing -->
+ <!-- event bubbling -->
+<div id="main3">
+    <div id="nav">
+        <a id="a" href="">Home</a><a id="a" href="">About</a>
+        <button id="btn2">click and submit</button>
+    </div>
+</div>
+
+<ul>
+    <!-- text-decoration : line-through se line cut karage apka word ko -->
+    <li class="li">apple</li>
+    <li class="li">guava</li>
+    <li class="li">grapes</li>
+    <li class="li">mango</li>
+    <li class="li">banana</li>
+</ul>
+<!-- Event bubbling end here -->
+
+<!-- event capturing -->
+<div class="a" >
+    <div class="b">
+        <div class="c">
+            <button id="btn3">click here </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="Event2.js"></script>
+</body>
+</html>
