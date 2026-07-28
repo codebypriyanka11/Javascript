@@ -71,5 +71,17 @@ button:hover{
     text-align:center;
     font-weight:bold;
     min-height:20px;
+    color: blue;
+}
+.error{
+    font-size: 12px;
+    margin-top: 4px;
     color: red;
+    display: none;
+}
+.error1{
+    font-size: 12px;
+    margin-top: 4px;
+    color: red;
+    display: none;
 }
