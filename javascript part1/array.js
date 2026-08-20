@@ -39,7 +39,7 @@ console.log(newarr);
 
 // reverse --> main array get change-->OG
 arr.reverse();
-console.log(arr);
+console.log("reverse", arr);
 
 // sort --> ya normaly ascending order me hota hai -->OG
 // yaha ya sort isliya nahi ho raha kyo ki ya numbers hai
@@ -61,7 +61,7 @@ console.log(desr);
 
 // . for each function padho
 // . map srf tab use karna hai jab aapko ek naya array 
-//   banana hai pichhle array ke dta ke basis par
+//   banana hai pichhle array ke data ke basis par
 // . map dikhte hi saath man mein ek blank array bana liya karo
 // . map for each jasa hi hai , lakin map me return karna jaruri hai
 let num = arr.map(function(val){
@@ -93,29 +93,29 @@ console.log(new3);
 // accumulator --> ak variable hota hai jisse ham is function kai last me seta hai
 // accumulator vo variable hai jo baar baar chalana par apni value yaad rakhta hai return hone ka baade bhi
 let ans = arr.reduce(function(accumulator,val){
-    return accumulator+val;
+    return accumulator*val;
 },0);
-console.log(ans);
+console.log("reduce", ans);
  
 
 // find --> find us phale value ko return karta hai vo apki condition ko match karta hai or koi value return nahi karega
 let ans1 = arr.find(function(val){
     return val ===34;
 })
-console.log(ans1);
+console.log("find", ans1);
 
 // some --> some ka use ham tab karta hai jab koi value apki condition pass karta hai to ya true return karta hai
 // Ex. hame ya jaana ho ki kya is array me hamare input se jyada value vala no hai kya
 let ans2 = arr.some(function(val){
     return val >40;
 })
-console.log(ans2);
+console.log("some", ans2);
 
 // every --> ya saare val k bare me true oe false return according to your condition
 let ans3 = arr.every(function(val){
     return val > 40;
 })
-console.log(ans3);
+console.log("every", ans3);
 
 
 // destructuring and spread operator
@@ -123,9 +123,10 @@ console.log(ans3);
 // destructuring
 let arr1 = [1,2,3,4,5,6,7,8];
 let[a,b,,,c,d,,e,f] = arr1;
+console.log([a,b,c,d,e,f])
 // spread operator --> ya ak new array bana dati hai
 let arr2 = [...arr1];
-
+console.log(arr2);
 // QUESTION AND ANSWER
 //Q. create an array with 3 fruits and print the second fruit.
 let fruits = ["apple" , "banana" , "mango"];
@@ -143,7 +144,7 @@ fruits1.push("kiwi");
 
 // insert red and blue at index 1 in this array
 let colors = ["green", "yellow"];
-colors.splice(1,0,"blue" ,"red");
+colors.splice(1,1,"blue" ,"red");
 console.log(colors);
 
 // extract only the middle element from this array
@@ -158,11 +159,11 @@ names.sort().reverse();
 console.log(names);
 
 // use .map() to square each Number:
-let marks1= [67,78, 58,78,98];
-let newmarks1 = marks.map(function(val){
+let marks2= [67,78, 58,78,98];
+let newmarks2 = marks2.map(function(val){
     return val*val;
 })
-
+console.log("newmarks2",newmarks2)
 
 // use .filter () to keep numbers greater than 10
 let vbn = [5,12,8,20,3];
@@ -175,16 +176,16 @@ console.log(newvbn);
 let all = [1,2];
 let bll =[3,4];
 let cll = [...all, ...bll];
-console.log(cll);
+console.log("cll", cll);
 
 // add India to the start to the start of this array usung spread
 let countries = ["USA","UK"];
 countries = ["INDIA", ...countries];
-
+console.log(countries)
 // clone this Array
 let wer = [1,2,3,4];
 let wer1 = [...wer];
-
+console.log("wer", wer , "wer1" , wer1)
 
 // confussion part 
 // splice and slice

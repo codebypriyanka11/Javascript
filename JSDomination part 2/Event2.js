@@ -4,7 +4,7 @@ document.querySelector("#nav")
     alert("clicked");
 })
 
-// here we apply style property on ul that hoe li inherit kar le 
+// here we apply style property on ul that how li inherit kar le 
 
 // let ul = document.querySelector("ul");
 
@@ -55,7 +55,7 @@ true);
 c.addEventListener("click",function(){
     console.log("c clicked");
 },true);
-// *jab bhi app click karte ho ya koi bhi envent raise karta ho to aapka jo event flow hai do phase mein chalta hai:
+// *jab bhi app click karte ho ya koi bhi event raise karta ho to aapka jo event flow hai do phase mein chalta hai:
 // phase 1 : event top level element se neecha ki taraf aayega 
 // phase2 2 :  event raised  element se parent element ki taraf aayega 
 

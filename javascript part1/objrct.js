@@ -26,13 +26,14 @@ console.log(user.address.location.lng);
 
 // object destructuring --> to access variable directly
 let {lat,lng} = user.address.location;
-console.log(lng);
+console.log("lng", lng);
+console.log("lat", lat);
 
-for (let key in obj){
+for (let value in obj){
     // to access only key
     // console.log(key);
     // to access both key and value
-console.log(key,obj[key]);
+console.log(value,obj[value]);
 }
 
 // Object.KEYS METHOD
@@ -46,16 +47,14 @@ console.log(Object.entries(obj) );
 // Copying objects : spread , object.assign,deep clone
 // spread
 let obj1 = {...obj};
-console.log(obj1);
+console.log("obj1", obj1);
 
 // object.assign --> use to copy another object
  let obj2 = Object.assign({},obj);
 let obj3 = Object.assign({price : Infinity},obj);
-
+console.log("obj3",obj3);
 // deep clone
-//Why we use deep clone--> jab ham nested obj ko copy karte hai chahe wo spred 
-// operator ka through kyo na ho apka ander ka nested obj, copy ki hui 
-// obj ka kaaran change ho sakte hai iseliya ham deep clone karta hai
+//Why we use deep clone--> jab ham nested obj ko copy karte hai chahe wo spred  operator ka through kyo na ho apka ander ka nested obj, copy ki hui obj ka kaaran change ho sakte hai iseliya ham deep clone karta hai
 // let user1 = {...user};
 // user1.address.city = "panipat";
 // console.log(user1);
@@ -63,7 +62,7 @@ let obj3 = Object.assign({price : Infinity},obj);
 // DEEP CLONE
 let user2 = JSON.parse(JSON.stringify(user));
 user2.address.city = "panipat";
-
+console.log("user2" , user2)
 // optional chaining and computed properties
 // optional chaining 
 let user1 = {...user};
@@ -82,7 +81,7 @@ let information = {
 }
 
 // QUESTION AND ANSWER
-// Q. CREATE AN OBJ FOR A STUDENT WITH NAME AGE AND ISENROLLED
+// Q. CREATE AN OBJ FOR A STUDENT WITH NAME AGE AND IS ENROLLED
 let student ={
     name : "priyanka",
     age : 21,
@@ -142,6 +141,9 @@ Object.entries(course).forEach(function(val){
     console.log(val[0]+":"+val[1]);
 });
 
+for(let val in course){
+    console.log(val,":",course[val])
+};
 
 
 

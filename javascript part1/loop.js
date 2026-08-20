@@ -97,7 +97,7 @@ for(let i=1 ; i<=100 ; i++){
     if(i%7 ===0){
         break;
     }
-    console.log(i);
+    console.log("h1", i);
 }
 
 // 7 bi print hoga
@@ -130,8 +130,9 @@ for(let i=1; i<=20 ;i++){
 let count = 0;
 for(let i = 1; i<=100; i++){
     if(i%2 ===1 ){
-count++;
+
 console.log(i);
+count++;
     }
     if(count===5) break;
 }

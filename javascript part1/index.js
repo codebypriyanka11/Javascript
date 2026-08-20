@@ -62,7 +62,7 @@ console.log(m--)
 console.log(m)
 
 let r = 5;
-//    5    6+1
+//            5    6+1
 let result = r++ + ++r;
 console.log(result)
 
@@ -142,5 +142,5 @@ function rps(user1, computer1) {
     return "computer win";
 }
 rps("rock", "scissor")
-console.log(rps("scissor", "scissor"))
+console.log(rps("scissor", "rock"))
 

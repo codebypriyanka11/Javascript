@@ -55,7 +55,7 @@ btn.addEventListener("click", function () {
     fileinp.click();
 })
 // fileinp.addEventListener("change",function(dets){
-//     // console.log(dets);
+//     console.log(dets);
 //     btn.textContent = dets.target.files[0].name;  
 // })
 // more perfect way
@@ -83,19 +83,19 @@ form.addEventListener("submit", function (dets) {
     img.setAttribute("src", inputs[0].value);
     let h3 = document.createElement("h3");
     h3.textContent = inputs[1].value;
-        let h5 = document.createElement("h5");
-        h5.textContent = inputs[2].value;
-            let p= document.createElement("p");
-            p.textContent = inputs[3].value;
+    let h5 = document.createElement("h5");
+    h5.textContent = inputs[2].value;
+    let p= document.createElement("p");
+    p.textContent = inputs[3].value;
 
 
 
       profile.appendChild(img);  
       card.appendChild(profile);
       card.appendChild(h3);
-            card.appendChild(h5);   
-                  card.appendChild(p);
-                  main2.appendChild(card);
+      card.appendChild(h5);   
+      card.appendChild(p);
+     main2.appendChild(card);
 inputs.forEach(function(inp){
     if(inp.type !== "submit"){
         inp.value ="";
@@ -113,12 +113,12 @@ abcd.addEventListener("mouseover",function(){
 abcd.addEventListener("mouseout",function(){
     abcd.style.backgroundColor = "red";
 });
-window.addEventListener("mousemove",function(dets){
-    // console.log(dets.clientX, dets.clientY);
-    abcd.style.top = dets.clientY + "px";
-    abcd.style.left = dets.clientX + "px";
+// window.addEventListener("mousemove",function(dets){
+//     // console.log(dets.clientX, dets.clientY);
+//     abcd.style.top = dets.clientY + "px";
+//     abcd.style.left = dets.clientX + "px";
    
-})
+// })
 //  task 4 end here
 
 

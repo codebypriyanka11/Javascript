@@ -30,11 +30,7 @@ function add(v1=0,v2=0){
 }
 add(1,2);
 
-// jab argument kai saare value ho to humein utna hi parameter
-//  lana padta hai isse bachna ke liya hu rest ka use
-//  karte hai ... agar ... function ke parameter space mein
-//  lage to wo rest operator hai and agar wo arrays and objects
-//  mein lage to wo spread operator hai
+// jab argument bahoot saare value ho to humein utna hi parameter lana padta hai isse bachna ke liya hum rest ka use karte hai ... agar ... function ke parameter space mein lage to wo rest operator hai and agar wo arrays and objects mein lage to wo spread operator hai
 function abcd(...val ){
     console.log(val)
 }
@@ -93,16 +89,22 @@ second();
 
 
 // lexical scoping
+console.log("lexical scoping");
 function third(){
     let a =12;
     function fourth(){
         let b =23;
+        console.log(a);
+        console.log(b);
         function fifth(){
             let c =34;
+            console.log(c);
         }
+        fifth();
     }
+    fourth();
 }
-
+third();
 
 // IIFE(immediately invoked function expression)
 (function(){
@@ -113,7 +115,7 @@ console.log("asdf")
 // hoisting differences between declaration and expresssion
 
 // function declaration me hosting work karti hai
-// yaa=c proper hoisting
+// yaa proper hoisting
 sixth()
 
 function sixth(){
@@ -168,7 +170,7 @@ function outer(){
     let count = 0 ;
     return function(){
         count++;
-        console.log(count);
+        console.log("outer", count);
     }
 }
 const counter=outer(); 
@@ -179,10 +181,12 @@ counter();
 // practice section
 // write a BMI calculator
 function bmi (weight,height) {
+    console.log("bmi");
     return weight/(height*height);
 }
 // console.log(Math.round(bmi(56,5.2)))
 console.log(bmi(56,5.2).toFixed(2));
+
 
 // create a reusable discount calculator (HOF)
 function discountCalculator(discount){
@@ -230,7 +234,7 @@ let arr = [12, 23 ,34, 45, 56];
 arr.forEach(function(val){
     console.log(`hello I am ${val}`);
 })
-console.log(val);
+// console.log(val);
 
 
 
