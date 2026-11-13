@@ -53,8 +53,6 @@ sessionStorage.clear();
 
 //  cookies mein jo bhi data  store karoge wo data reload par automatically server par jaayega 
 
-document.cookies = "email=priyanka@test.com";
-
 
 document.cookie = "email=priyanka@test.com";
 

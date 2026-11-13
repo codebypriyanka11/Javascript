@@ -2,9 +2,9 @@ function myToaster(config){
     return function ( notification ){
         let div = document.createElement("div");
 
-        div.className = `inline-block px-6 py-3 
+        div.className = `inline-block px-6 py-3 rounded shadow-lg pointer-events-none 
         ${config.theme === "dark" ? "text-white bg-gray-800" : "text-black bg-gray-100"}
-         rounded shadow-lg pointer-events-none 
+         
          ` ;
 
         div.textContent = notification;

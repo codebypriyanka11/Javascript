@@ -2,7 +2,8 @@
 function createToaster(config){
     return function (notification){
         let div = document.createElement("div");
-div.className = `fixed ${config.theme === "dark" ?  "bg-gray-800 text-white" : " bg-gray-100 text-black"} px-6 py-3 rounded shadow-lg pointer-events-none
+div.className = `fixed px-6 py-3 rounded shadow-lg pointer-events-none
+ ${config.theme === "dark" ?  "bg-gray-800 text-white" : " bg-gray-100 text-black"} 
 ${config.positionX === "right" ? "right-10" : "left-10"}
 ${config.positionY === "top" ? "top-10" : "bottom-10"}`;
 
@@ -22,5 +23,5 @@ let toaster = createToaster({
     duration : 3,
 });
 
-toaster("This is a dummy notification !");  
+// toaster("This is a dummy notification !");  
 toaster("some interesting notification");

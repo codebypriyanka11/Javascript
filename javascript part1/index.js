@@ -29,6 +29,7 @@ if (!(temp < 30)) {
 }
 
 let c = 0;
+// 0 mean false so else block will execute
 if (c) {
     console.log("truth")
 } else {

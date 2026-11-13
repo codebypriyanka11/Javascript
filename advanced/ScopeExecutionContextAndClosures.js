@@ -12,7 +12,7 @@
 
 
 // EXECUTION CONTEXT : MEMORY CREATION AND EXECUTION PHASE
-// js sabse phale jaise hi apka finction dakhta hai sabse phale js bannaata hai execution Context,  ye ak process hai jo ki do different phase me chalta hai , memory phase and doosre ka name hai execution phase 
+// js sabse phale jaise hi apka function dakhta hai sabse phale js bannaata hai execution Context,  ye ak process hai jo ki do different phase me chalta hai , memory phase and doosre ka name hai execution phase 
 
 // LEXICAL SCOPE AND DYNAMIC SCOPE
 // // js me lexical scoping hoti hai -- ki aap kaha par physically available ho ye poori tareeke se depend krta hai ki aapkya access kro paaoge
@@ -25,7 +25,7 @@ function abcds() {
   defg();
 }
 abcds();
-// dynamic scopin example 
+// dynamic scoping example 
 let a = 14;
 function abcd() {
   console.log(a);
@@ -52,7 +52,7 @@ function print(){
 print();
 // jab ham iss print function ko call karte hai to s save hua fir isne ak function ko call kiya or print function khatam ho gaya to iska matlab ab print function nahi raha or s name ka ab koi variable nahi hai to s kasa print ho raha hai 
 
-// ye sach hai fun ke khatam hone e aapka fun uske variables khtm hojaate hai ,par jab bhi clouser banta hai to aapka fun uske variables ka ek baclink bnaya jaata hai aur uska naam hota hai [[environment]]
+// ye sach hai fun ke khatam hone pe aapka fun uske variables khtm hojaate hai ,par jab bhi clouser banta hai to aapka fun uske variables ka ek baclink bnaya jaata hai aur uska naam hota hai [[environment]]
 
 // USE CASES : PRIVATE COUNTERS , ENCAPSULATION
 
